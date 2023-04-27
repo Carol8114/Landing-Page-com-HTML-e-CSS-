@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+header{
+    display: flex;
+    /* é pra deixar a lista do lado do titulo*/
+    flex-direction: row;
+    /*cria um espaço entre eles*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    /*abaixo ele junta o texto pra não ficar muito separado*/
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+a:hover{ /*esse "a" vai deixar a letra rocha quando o cursor passar em cima*/
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+#inscreva-se-btn:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+h1{
+    font-weight: 200; /*deixa a fonte mais fininha*/
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+
+h2{
+    /*abaixo ele aumenta a fonte*/
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: rgb(132, 14, 201);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img{
+    width: 670px;
+}
+form{
+    /*deixa o formulario em coluna*/
+    display: flex;
+    flex-direction: column;
+    /*abaixo é o tamanho do formulario*/
+    width: 70%;
+}
+form [type="submit"]{
+    /*abaixo altura*/
+    height: 50px;
+    /*largura*/
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    /*força da fonte colocar em negrito*/
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+input{
+    margin-top: 20px;
+    /*abaixo o tamanho*/
+    height: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    /*estilo de borda*/
+    border: none;
+    /*abaixo pra letra ficar maior*/
+    font-size: 15px;
+}
